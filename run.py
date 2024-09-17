@@ -9,7 +9,6 @@ import tqdm
 
 
 def extract_option(text):
-    # 正则表达式匹配模式，匹配 "**B: Pulmonary atresia**"
     pattern = r'[A-D]'
     matches = re.findall(pattern, text)
 
@@ -49,13 +48,13 @@ def main():
         print("\n***********************\n")
         print(msg)
         print("\n***********************\n")
-        print("选择的答案是：\n")
+        print("The selected answer is:\n")
         print(text_answer)
         print("\n***********************\n")
-        print("正确的答案是：\n")
+        print("The correct answer is:\n")
         print(gold_answer)
         print("\n***********************\n")
-        print("当前准确率为：")
+        print("The current accuracy is:")
         print(WW / (idx + 1) * 100)
         print("\n***********************\n")
 

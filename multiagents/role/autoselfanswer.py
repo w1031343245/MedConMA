@@ -56,10 +56,10 @@ def SelfAnswer(
     context: str = ""
     for expert in Experts:
         msg = expert.run()
-        context = context + expert.name + ":" + str(msg) + '\n'+ "**************************************\n"
+        context = context + expert.name + ":" + str(msg) + '\n'+ "**************************************************************\n"
 
 
-    print("\n\n\n**************************分析结束****************************\n\n\n")
+    print("\n\n\n*****************The analysis is complete*********************\n\n\n")
     print("\n\n\n**************************************************************\n\n\n")
     print(context)
     print("\n\n\n**************************************************************\n\n\n")

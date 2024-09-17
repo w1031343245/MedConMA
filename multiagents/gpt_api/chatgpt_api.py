@@ -13,7 +13,7 @@ client = OpenAI(
 
 def chat_with_gpt(prompt):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",  # 选择模型
+        model="gpt-3.5-turbo", 
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt},
@@ -24,7 +24,7 @@ def chat_with_gpt(prompt):
 
 def chat_with_gpt2(systen_role, prompt):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",  # 选择模型
+        model="gpt-3.5-turbo",  
         temperature=0,
         max_tokens=50,
         messages=[
